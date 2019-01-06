@@ -11,3 +11,19 @@
 ## 如何使用CatLib For ILRuntime
 
 这个Demo演示了如何在Unity中使用CatLib For ILRuntime扩展组件。
+
+## 起步
+
+- clone 示例项目库
+
+```csharp
+git clone https://github.com/CatLib/demo-how-to-use-catlib-for-ilruntime.git
+```
+
+- 安装子模块
+
+```csharp
+git submodule update --init --recursive
+```
+
+- 使用`Unity3d`打开这个项目
