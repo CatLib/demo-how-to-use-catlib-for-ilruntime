@@ -26,4 +26,10 @@ git clone https://github.com/CatLib/demo-how-to-use-catlib-for-ilruntime.git
 git submodule update --init --recursive
 ```
 
-- 使用`Unity3d`打开这个项目
+- 使用`Unity3d`打开这个项目，并设定框架调试等级：
+
+| 调试等级                            | 描述                 |
+| -------------------------------- |:----------------------------:|
+| `Development`     | 不从热更新文件中读取代码      |
+| `Stading`         | 从热更新文件中读取代码，并加载调试文件      |
+| `Production`      | 从热更新文件中读取代码，不加载调试文件      |
