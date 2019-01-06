@@ -1,0 +1,3 @@
+[submodule "Assets/Game/Providers/CatLib.ILRuntime"]
+	path = Assets/Game/Providers/CatLib.ILRuntime
+	url = https://github.com/CatLib/CatLib.ILRuntime
