@@ -1,4 +1,4 @@
-<p align="center"><img width="173" height="57" src="http://catlib.io/images/logo.txt.png"></p>
+<p align="center"><img width="173" height="57" src="http://catlib.io/imgs/logo-txt.png"></p>
 
 <p align="center">
 <a href="https://github.com/CatLib/CatLib/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" title="license-mit" /></a>
@@ -34,9 +34,6 @@ CatLib提供了构建一个游戏所必备的基础组件 , 您可以通过接�
 CatLib拥有完整的文档支持，您可以访问 [CatLib文档](http://catlib.io) 进行学习。
 
 或者您也可以通过 [issues](https://github.com/CatLib/CatLib/issues) 来提出您的问题，我们及时为您解答。
-
-## 架构图
-![](http://catlib.io/images/architecture-diagram.svg)
 
 ## 项目开发计划
 
