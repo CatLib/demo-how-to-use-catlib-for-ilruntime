@@ -9,19 +9,16 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-using CatLib;
-using Hotfix.API.HelloWorld;
-
-namespace Demo.HelloWorld
+namespace Demo.API.ILRuntime
 {
     /// <summary>
-    /// Hello World服务
+    /// 热更新入口服务
     /// </summary>
-    public class ProviderHelloWorld : ServiceProvider
+    public interface IMain
     {
-        public override void Register()
-        {
-            App.Singleton<IHelloWorld, ConsoleHelloWorld>();
-        }
+        /// <summary>
+        /// 启动热更新服务
+        /// </summary>
+        void Start();
     }
 }

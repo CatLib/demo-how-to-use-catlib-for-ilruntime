@@ -1,18 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/*
+ * This file is part of the CatLib package.
+ *
+ * (c) CatLib <support@catlib.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Document: https://ilruntime.catlib.io/
+ */
 
-public class ConsoleHelloWorld : MonoBehaviour
+using Demo.API.Debug;
+using Hotfix.API.HelloWorld;
+
+namespace Demo.HelloWorld
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Hello World
+    /// </summary>
+    public class ConsoleHelloWorld : IHelloWorld
     {
-        
-    }
+        /// <summary>
+        /// 调试器
+        /// </summary>
+        private IDebug Debug { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// 构建一个Hello World
+        /// </summary>
+        /// <param name="debug"></param>
+        public ConsoleHelloWorld(IDebug debug)
+        {
+            Debug = debug;
+        }
+
+        /// <summary>
+        /// Say Hello World
+        /// </summary>
+        public void Say()
+        {
+            Debug.Log("hello world");
+        }
     }
 }

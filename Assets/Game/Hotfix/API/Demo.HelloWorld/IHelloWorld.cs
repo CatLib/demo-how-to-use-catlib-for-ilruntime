@@ -1,18 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/*
+ * This file is part of the CatLib package.
+ *
+ * (c) CatLib <support@catlib.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Document: https://ilruntime.catlib.io/
+ */
 
-public class IHelloWorld : MonoBehaviour
+namespace Hotfix.API.HelloWorld
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Hello World
+    /// </summary>
+    public interface IHelloWorld
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// Say Hello World
+        /// </summary>
+        void Say();
     }
 }
+

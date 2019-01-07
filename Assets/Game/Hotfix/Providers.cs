@@ -6,10 +6,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * Document: https://catlib.io/
+ * Document: https://ilruntime.catlib.io/
  */
 
 using CatLib;
+using Demo.HelloWorld;
+using Demo.Main;
+using Hotfix.Debug;
 
 namespace Game.Hotfix
 {
@@ -23,7 +26,9 @@ namespace Game.Hotfix
         /// </summary>
         public static IServiceProvider[] ServiceProviders => new IServiceProvider[]
         {
-        	
+        	new ProviderMain(),
+            new ProviderDebug(),
+            new ProviderHelloWorld()
         };
     }
 }

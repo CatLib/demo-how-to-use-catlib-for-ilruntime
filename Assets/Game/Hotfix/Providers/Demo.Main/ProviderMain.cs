@@ -1,18 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/*
+ * This file is part of the CatLib package.
+ *
+ * (c) CatLib <support@catlib.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Document: https://ilruntime.catlib.io/
+ */
 
-public class ProviderMain : MonoBehaviour
+using CatLib;
+using Demo.API.ILRuntime;
+
+namespace Demo.Main
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// 入口服务
+    /// </summary>
+    public class ProviderMain : ServiceProvider
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// 注册入口服务
+        /// </summary>
+        public override void Register()
+        {
+            App.Singleton<IMain, Main>();
+        }
     }
 }

@@ -6,3 +6,4 @@ Packages/
 Temp/
 *.sln
 Logs/
+obj/

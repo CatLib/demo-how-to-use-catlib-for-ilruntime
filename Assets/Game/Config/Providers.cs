@@ -10,6 +10,9 @@
  */
 
 using CatLib;
+using CatLib.ILRuntime;
+using Demo.Debug;
+using Demo.ILRuntime;
 
 namespace Game
 {
@@ -27,7 +30,9 @@ namespace Game
             {
                 return new IServiceProvider[]
                 {
-                    // todo: 在此处增加您项目的服务提供者
+                    new ProviderILRuntime(),
+                    new ProviderDemoILRuntime(), 
+                    new ProviderDebug(), 
                 };
             }
         }

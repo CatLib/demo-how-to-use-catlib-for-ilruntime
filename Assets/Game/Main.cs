@@ -10,7 +10,9 @@
  */
 
 using CatLib;
+using CatLib.ILRuntime;
 using UnityEngine;
+using Application = CatLib.Application;
 
 namespace Game
 {
@@ -25,15 +27,20 @@ namespace Game
         /// </summary>
         protected override void OnStartCompleted()
         {
-            // Application entry, Your code starts writing here
-            // called this function after, use App.Make function to get service
-            // ex: App.Make<IYourService>().Debug("hello world");
+            
+        }
 
-            Debug.Log("Hello CatLib, Debug Level: " + App.Make<DebugLevels>());
-            App.Watch<DebugLevels>(newLevel =>
+        /// <summary>
+        /// 创建应用程序实例
+        /// </summary>
+        /// <param name="debugLevel">调试等级</param>
+        /// <returns>应用程序实例</returns>
+        protected override Application CreateApplication(DebugLevels debugLevel)
+        {
+            return new ILRuntimeApplication(this)
             {
-                Debug.Log("Change debug level: " + newLevel);
-            });
+                DebugLevel = debugLevel
+            };
         }
 
         /// <summary>

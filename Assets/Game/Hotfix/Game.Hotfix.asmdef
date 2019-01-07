@@ -1,6 +1,8 @@
 {
     "name": "Game.Hotfix",
-    "references": [],
+    "references": [
+        "Demo.API"
+    ],
     "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
@@ -10,6 +12,5 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
+    "defineConstraints": []
 }
