@@ -1,7 +1,7 @@
 {
     "name": "Demo.Debug",
     "references": [
-        "GUID:1dd5c07d4b2dcef48809df2316461024"
+        "Demo.API"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],
@@ -10,6 +10,5 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
+    "defineConstraints": []
 }
