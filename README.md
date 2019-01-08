@@ -36,4 +36,4 @@ git submodule update --init --recursive
 
 ## 生成热更新文件
 
-我们利用unity来生成热更新dll，所以在您发布的时候您需要将`Library\ScriptAssemblies`文件夹中生成的热更新文件复制到您的项目中。
+我们利用unity来生成热更新dll，所以在您发布的时候您需要将`Library/ScriptAssemblies`文件夹中生成的热更新文件复制到您的项目中。
