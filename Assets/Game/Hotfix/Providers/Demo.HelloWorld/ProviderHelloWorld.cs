@@ -12,13 +12,16 @@
 using CatLib;
 using Hotfix.API.HelloWorld;
 
-namespace Demo.HelloWorld
+namespace Hotfix.HelloWorld
 {
     /// <summary>
     /// Hello World服务
     /// </summary>
     public class ProviderHelloWorld : ServiceProvider
     {
+        /// <summary>
+        /// 注册Hello World服务
+        /// </summary>
         public override void Register()
         {
             App.Singleton<IHelloWorld, ConsoleHelloWorld>();

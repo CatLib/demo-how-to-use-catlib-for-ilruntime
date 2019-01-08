@@ -65,7 +65,7 @@ namespace Demo.ILRuntime.Adapter
             {
                 if (!methodGotLog)
                 {
-                    methodLog = instance.Type.GetMethod("Log", 0);
+                    methodLog = instance.Type.GetMethod("Log", 1);
                     methodGotLog = true;
                 }
 

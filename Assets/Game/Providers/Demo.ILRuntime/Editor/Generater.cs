@@ -13,7 +13,7 @@ using ILRuntime.Runtime.CLRBinding;
 using System;
 using System.Collections.Generic;
 using Demo.API.Debug;
-using Demo.API.ILRuntime;
+using Demo.API.UI;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,7 +29,7 @@ namespace CatLib.ILRuntime
         {
             var types = new List<Type>
             {
-                typeof(IMain),
+                typeof(IUI),
                 typeof(IDebug)
             };
 

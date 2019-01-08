@@ -11,7 +11,7 @@
 
 using Demo.API.Debug;
 
-namespace Demo.Debug
+namespace Hotfix.Debug
 {
     /// <summary>
     /// 热更新调试

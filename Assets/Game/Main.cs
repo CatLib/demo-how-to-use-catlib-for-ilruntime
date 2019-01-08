@@ -11,6 +11,7 @@
 
 using CatLib;
 using CatLib.ILRuntime;
+using Demo.API.UI;
 using UnityEngine;
 using Application = CatLib.Application;
 
@@ -27,7 +28,8 @@ namespace Game
         /// </summary>
         protected override void OnStartCompleted()
         {
-            
+            var a = App.Make<IUI>();
+            a.Open("login");
         }
 
         /// <summary>

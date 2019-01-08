@@ -18,14 +18,14 @@ namespace Demo.ILRuntime
     /// <summary>
     /// 演示用的AppDomain
     /// </summary>
-    public class DemoAppDomain : AppDomain
+    public class AppDomainDemo : AppDomain
     {
         /// <summary>
         /// 构造一个演示用的AppDomain
         /// </summary>
         /// <param name="application">应用程序</param>
         /// <param name="debugLevel">调试等级</param>
-        public DemoAppDomain(IApplication application, DebugLevels debugLevel)
+        public AppDomainDemo(IApplication application, DebugLevels debugLevel)
             : base(application, debugLevel)
         {
             Adapter.RegisterAdapter.Register(Domain);
@@ -47,17 +47,15 @@ namespace Demo.ILRuntime
                     application.DeferInitServiceProvider(
                         () =>
                         {
-                            Game.Hotfix.Program.Main(Application);
+                            Hotfix.Program.Main(Application);
                         });
                     return;
                 }
-                Game.Hotfix.Program.Main(Application);
+                Hotfix.Program.Main(Application);
                 return;
             }
 #endif
             base.CallMain(main);
         }
-
-
     }
 }

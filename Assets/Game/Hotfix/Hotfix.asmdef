@@ -1,5 +1,5 @@
 {
-    "name": "Game.Hotfix",
+    "name": "Hotfix",
     "references": [
         "Demo.API"
     ],

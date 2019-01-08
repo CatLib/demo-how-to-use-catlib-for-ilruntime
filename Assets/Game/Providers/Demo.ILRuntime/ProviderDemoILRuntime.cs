@@ -11,6 +11,8 @@
 
 using CatLib;
 using CatLib.ILRuntime;
+using Demo.ILRuntime.Loader;
+using System.Collections;
 
 namespace Demo.ILRuntime
 {
@@ -20,11 +22,41 @@ namespace Demo.ILRuntime
     public class ProviderDemoILRuntime : ServiceProvider
     {
         /// <summary>
+        /// 初始化ILRuntime服务
+        /// </summary>
+        public override void Init()
+        {
+            App.On(ApplicationEvents.OnInited, () =>
+            {
+                var demoDomain = App.Make<IAppDomain>() as AppDomain;
+                if (demoDomain != null)
+                {
+                    demoDomain.Init("Hotfix.Program.Main");
+                }
+            });
+        }
+
+        /// <summary>
+        /// 等待初始化代码
+        /// </summary>
+        /// <returns></returns>
+        public override IEnumerator CoroutineInit()
+        {
+            if (App.DebugLevel == DebugLevels.Development)
+            {
+                yield break;
+            }
+
+            yield return App.Make<LoaderHotfix>().Start();
+        }
+
+        /// <summary>
         /// 注册服务
         /// </summary>
         public override void Register()
         {
-            App.Singleton<IAppDomain, DemoAppDomain>();
+            App.Singleton<IAppDomain, AppDomainDemo>().Alias<AppDomainDemo>();
+            App.Bind<LoaderHotfix>();
         }
     }
 }

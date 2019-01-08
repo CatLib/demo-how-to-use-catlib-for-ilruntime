@@ -9,15 +9,16 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-using Demo.API.ILRuntime;
+using Demo.API.Debug;
+using Demo.API.UI;
 using Hotfix.API.HelloWorld;
 
-namespace Demo.Main
+namespace Hotfix.UI
 {
     /// <summary>
-    /// 入口服务
+    /// UI服务
     /// </summary>
-    public class Main : IMain
+    public class UIManager : IUI
     {
         /// <summary>
         /// Hello World服务
@@ -28,15 +29,16 @@ namespace Demo.Main
         /// 构建一个入口服务
         /// </summary>
         /// <param name="helloWorld">Hello World服务</param>
-        public Main(IHelloWorld helloWorld)
+        public UIManager(IHelloWorld helloWorld)
         {
             HelloWorld = helloWorld;
         }
 
         /// <summary>
-        /// 启动热更新服务
+        /// 打开一个UI
         /// </summary>
-        public void Start()
+        /// <param name="name">UI的名字</param>
+        public void Open(string name)
         {
             HelloWorld.Say();
         }

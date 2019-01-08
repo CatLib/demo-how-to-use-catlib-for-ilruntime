@@ -9,16 +9,22 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-namespace Demo.API.ILRuntime
+using CatLib;
+using Demo.API.UI;
+
+namespace Hotfix.UI
 {
     /// <summary>
-    /// 热更新入口服务
+    /// 入口服务
     /// </summary>
-    public interface IMain
+    public class ProviderUI : ServiceProvider
     {
         /// <summary>
-        /// 启动热更新服务
+        /// 注册入口服务
         /// </summary>
-        void Start();
+        public override void Register()
+        {
+            App.Singleton<IUI, UIManager>();
+        }
     }
 }

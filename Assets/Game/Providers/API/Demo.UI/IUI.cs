@@ -9,22 +9,16 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-using CatLib;
-using Demo.API.ILRuntime;
-
-namespace Demo.Main
+namespace Demo.API.UI
 {
     /// <summary>
-    /// 入口服务
+    /// UI服务
     /// </summary>
-    public class ProviderMain : ServiceProvider
+    public interface IUI
     {
         /// <summary>
-        /// 注册入口服务
+        /// UI服务
         /// </summary>
-        public override void Register()
-        {
-            App.Singleton<IMain, Main>();
-        }
+        void Open(string name);
     }
 }

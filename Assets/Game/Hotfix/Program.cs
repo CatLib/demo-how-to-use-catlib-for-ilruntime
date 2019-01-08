@@ -11,7 +11,7 @@
 
 using CatLib;
 
-namespace Game.Hotfix
+namespace Hotfix
 {
     /// <summary>
     /// 程序入口

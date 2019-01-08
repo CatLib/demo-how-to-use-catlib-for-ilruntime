@@ -11,7 +11,7 @@ namespace ILRuntime.Runtime.Generated
         /// </summary>
         public static void Initialize(ILRuntime.Runtime.Enviorment.AppDomain app)
         {
-            Demo_API_ILRuntime_IMain_Binding.Register(app);
+            Demo_API_UI_IUI_Binding.Register(app);
             Demo_API_Debug_IDebug_Binding.Register(app);
         }
 

@@ -12,7 +12,7 @@
 using Demo.API.Debug;
 using Hotfix.API.HelloWorld;
 
-namespace Demo.HelloWorld
+namespace Hotfix.HelloWorld
 {
     /// <summary>
     /// Hello World

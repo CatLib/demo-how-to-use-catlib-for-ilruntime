@@ -11,7 +11,6 @@
 
 using CatLib;
 using Demo.API.Debug;
-using Demo.Debug;
 
 namespace Hotfix.Debug
 {

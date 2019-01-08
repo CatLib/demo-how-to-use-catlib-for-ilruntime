@@ -25,7 +25,7 @@ namespace Demo.ILRuntime.Adapter
         public static void Register(ILRuntimeDomain appDomain)
         {
             appDomain.RegisterCrossBindingAdaptor(new AdapterIDebug());
-            appDomain.RegisterCrossBindingAdaptor(new AdapterIMain());
+            appDomain.RegisterCrossBindingAdaptor(new AdapterIUI());
         }
     }
 }

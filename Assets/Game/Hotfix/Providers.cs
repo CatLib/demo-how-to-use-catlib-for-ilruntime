@@ -10,11 +10,11 @@
  */
 
 using CatLib;
-using Demo.HelloWorld;
-using Demo.Main;
 using Hotfix.Debug;
+using Hotfix.HelloWorld;
+using Hotfix.UI;
 
-namespace Game.Hotfix
+namespace Hotfix
 {
     /// <summary>
     /// 项目注册的服务提供者
@@ -26,7 +26,7 @@ namespace Game.Hotfix
         /// </summary>
         public static IServiceProvider[] ServiceProviders => new IServiceProvider[]
         {
-        	new ProviderMain(),
+        	new ProviderUI(),
             new ProviderDebug(),
             new ProviderHelloWorld()
         };
