@@ -12,7 +12,7 @@
 
 这个Demo演示了如何在Unity中使用CatLib For ILRuntime扩展组件。
 
-扩展组件文档请访问: [CatLib.ILRuntime 中文文档](https://ilruntime.catlib.io) 
+扩展组件文档请访问: [CatLib For ILRuntime 中文文档](https://ilruntime.catlib.io) 
 
 ## 起步
 
