@@ -33,3 +33,7 @@ git submodule update --init --recursive
 | `Development`     | 不从热更新文件中读取代码      |
 | `Stading`         | 从热更新文件中读取代码，并加载调试文件      |
 | `Production`      | 从热更新文件中读取代码，不加载调试文件      |
+
+## 生成热更新文件
+
+我们利用unity来生成热更新dll，所以在您发布的时候您需要将`Library/ScriptAssemblies`文件夹中生成的热更新文件复制到您的项目中。
