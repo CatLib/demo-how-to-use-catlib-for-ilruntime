@@ -10,7 +10,7 @@
 
 ## 如何使用CatLib For ILRuntime
 
-这个Demo演示了如何在Unity中使用CatLib For ILRuntime扩展组件。
+这个Demo演示了如何在Unity中使用[CatLib For ILRuntime扩展组件](https://github.com/CatLib/CatLib.ILRuntime)。
 
 扩展组件文档请访问: [CatLib For ILRuntime 中文文档](https://ilruntime.catlib.io) 
 
