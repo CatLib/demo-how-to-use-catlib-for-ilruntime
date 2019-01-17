@@ -19,7 +19,7 @@
 - clone 示例项目库
 
 ```csharp
-git clone https://github.com/CatLib/demo-how-to-use-catlib-for-ilruntime.git
+git clone https://github.com/catlib/demo-how-to-use-catlib-for-ilruntime.git
 ```
 
 - 安装子模块
