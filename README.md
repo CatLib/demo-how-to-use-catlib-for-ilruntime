@@ -28,7 +28,7 @@ git clone https://github.com/CatLib/demo-how-to-use-catlib-for-ilruntime.git
 git submodule update --init --recursive
 ```
 
-> [CatLib.ILRuntime](https://github.com/CatLib/CatLib.ILRuntime) 将会以子模块的形式安装到`CatLib/Vendor`文件夹下
+> [CatLib.ILRuntime](https://github.com/CatLib/CatLib.ILRuntime) 将会以子模块的形式安装到`CatLib/Runtime/Vendor`文件夹下
 
 - 使用`Unity3d`打开这个项目，并设定框架调试等级：
 
