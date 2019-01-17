@@ -8,3 +8,5 @@ Temp/
 Logs/
 obj/
 *.csproj
+Assets/StreamingAssets/
+Assets/StreamingAssets.meta
