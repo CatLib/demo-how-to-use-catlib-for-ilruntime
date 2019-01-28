@@ -24,10 +24,15 @@ namespace CatLib.ILRuntime
             var source = UnityEngine.Application.dataPath + "/../Library/ScriptAssemblies/";
             var target = UnityEngine.Application.streamingAssetsPath + "/";
 
+            if (!Directory.Exists(target))
+            {
+                Directory.CreateDirectory(target);
+            }
+
             File.Copy(source + DllName + ".dll", target + DllName + ".dll", true);
             File.Copy(source + DllName + ".pdb", target + DllName + ".pdb", true);
 
-            AssetDatabase.Refresh();
+            AssetDatabase.Refresh(); 
         }
     }
 }

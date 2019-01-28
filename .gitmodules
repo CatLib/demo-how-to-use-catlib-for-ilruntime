@@ -1,3 +1,3 @@
 [submodule "Assets/CatLib/Vendor/CatLib.ILRuntime"]
 	path = Assets/CatLib/Vendor/CatLib.ILRuntime
-	url = https://github.com/CatLib/CatLib.ILRuntime.git
+	url = https://github.com/CatLib/CatLib.ILRuntime
