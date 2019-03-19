@@ -8,15 +8,15 @@
   <img src="https://codecov.io/gh/CatLib/Core/branch/master/graph/badge.svg" alt="Codecov" />
 </a>
 
-> We are currently preparing to convert the comments in the code to the English version. We look forward to your joining.
+> English version is coming soon in version 2.0
 
 > 了解 [CatLib/Core](https://github.com/CatLib/Core) 源码
 
 ## 关于CatLib for Unity
 
-CatLib for Unity 是为Unity3D开发的全栈开发框架，我们通过集成常见的开发组件来减少开发者们不必要的工作。
+CatLib for Unity 是为Unity3D开发的服务提供者框架，这个框架对于一些功能性业务的研发非常有帮助，我们还通过集成常见的开发组件来减少开发者们不必要的工作。
 
-CatLib提供了构建一个游戏所必备的基础组件 , 您可以通过接口简单的调用就可以访问这些组件的特性. 您也可以根据业务需求自由组合搭配这些组件，来构建一个完整的项目。
+CatLib提供了构建一个游戏所必备的基础组件 , 您可以通过接口简单的调用就可以访问这些组件的特性. 您也可以根据业务需求自由组合搭配，全新构建这些组件，来构建一个完整的项目。
 
 无论您是一个新的项目还是一个正在被开发的项目，您都可以轻松的嵌入CatLib。绝大多数的CatLib的组件都可以被单独使用和无感知替换的，我们也欢迎其他的框架开发者来使用这些组件。
 
@@ -24,10 +24,10 @@ CatLib提供了构建一个游戏所必备的基础组件 , 您可以通过接�
 
 - 解压`unitypackage`到unity项目。
 - 创建一个GameObject。
-- 将`Game/Main.cs`入口文件拖拽到GameObject上。
+- 将`Demo/Runtime/Main.cs`入口文件拖拽到GameObject上。
 - 运行您的unity场景，您将会看到控制台输出欢迎字符串：`Hello CatLib`。
 
-> Game文件夹下的内容（或文件夹的命名）可以由您进行修改。
+> Demo文件夹下的内容（或文件夹的命名）可以由您进行修改。
 
 ## 学习CatLib
 
@@ -41,7 +41,7 @@ CatLib一直都在建立新的组件来降低开发者的工作量，进入 [Cat
 
 ## 贡献
 
-CatLib还是一个年轻的框架，她的成长和你们的贡献是分不开的，如果您想要为项目进行贡献请参考： [CatLib 贡献文档](http://catlib.io/v1/guide/contribution.html) 您的贡献将会被列入贡献者名单，我们欢迎任何形式的`Pull Request`!
+CatLib还是一个年轻的框架，她的成长和你们的贡献是分不开的，如果您想要为项目进行贡献请参考： [CatLib 贡献文档](https://catlib.io/v1/contribution.html) 您的贡献将会被列入贡献者名单，我们欢迎任何形式的`Pull Request`!
 
 issues 不仅仅只是用于bug跟踪 , 如果您有好的意见或者想法，也欢迎创建 issues 一起讨论。
 
