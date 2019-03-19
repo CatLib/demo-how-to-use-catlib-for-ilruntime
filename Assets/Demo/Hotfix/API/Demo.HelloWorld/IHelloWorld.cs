@@ -12,7 +12,7 @@
 namespace Hotfix.API.HelloWorld
 {
     /// <summary>
-    /// Hello World
+    /// 热更新内部的 Hello World 接口，这个接口无法被主程序访问。
     /// </summary>
     public interface IHelloWorld
     {

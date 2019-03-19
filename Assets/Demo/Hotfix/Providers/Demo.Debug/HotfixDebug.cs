@@ -14,14 +14,11 @@ using Demo.API.Debug;
 namespace Hotfix.Debug
 {
     /// <summary>
-    /// 热更新调试
+    /// 热更新Debug实现
     /// </summary>
     public class HotfixDebug : IDebug
     {
-        /// <summary>
-        /// 输出一条调试日志
-        /// </summary>
-        /// <param name="message">日志消息</param>
+        /// <inheritdoc />
         public void Log(string message)
         {
             UnityEngine.Debug.Log("[HotFix] :" + message);

@@ -9,27 +9,27 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-using Demo.API.Debug;
+using Demo.API.HotfixEntry;
 using Hotfix.API.HelloWorld;
 
-namespace Hotfix.HelloWorld
+namespace Hotfix.HotfixEntry
 {
     /// <summary>
-    /// 热更新 Hello World 实现
+    /// 热更新入口
     /// </summary>
-    public class ConsoleHelloWorld : IHelloWorld
+    public class HotfixEntry : IHotfixEntry
     {
-        private IDebug Debug { get; set; }
+        private IHelloWorld HelloWorld { get; set; }
 
-        public ConsoleHelloWorld(IDebug debug)
+        public HotfixEntry(IHelloWorld helloWorld)
         {
-            Debug = debug;
+            HelloWorld = helloWorld;
         }
 
         /// <inheritdoc />
-        public void Say()
+        public void Entry()
         {
-            Debug.Log("hello world");
+            HelloWorld.Say();
         }
     }
 }

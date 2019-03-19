@@ -12,7 +12,7 @@
 using CatLib;
 using Hotfix.Debug;
 using Hotfix.HelloWorld;
-using Hotfix.UI;
+using Hotfix.HotfixEntry;
 
 namespace Hotfix
 {
@@ -26,7 +26,7 @@ namespace Hotfix
         /// </summary>
         public static IServiceProvider[] ServiceProviders => new IServiceProvider[]
         {
-        	new ProviderUI(),
+        	new ProviderHotfixEntry(), 
             new ProviderDebug(),
             new ProviderHelloWorld()
         };

@@ -13,7 +13,7 @@ using ILRuntime.Runtime.CLRBinding;
 using System;
 using System.Collections.Generic;
 using Demo.API.Debug;
-using Demo.API.UI;
+using Demo.API.HotfixEntry;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,11 +29,11 @@ namespace CatLib.ILRuntime
         {
             var types = new List<Type>
             {
-                typeof(IUI),
+                typeof(IHotfixEntry),
                 typeof(IDebug)
             };
 
-            BindingCodeGenerator.GenerateBindingCode(types, "Assets/Game/Providers/Demo.ILRuntime/Generated/CLR");
+            BindingCodeGenerator.GenerateBindingCode(types, "Assets/Demo/Runtime/Providers/Demo.ILRuntime/Generated/CLR");
         }
     }
 }

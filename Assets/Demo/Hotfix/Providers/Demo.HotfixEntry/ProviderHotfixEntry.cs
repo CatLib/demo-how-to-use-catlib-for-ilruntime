@@ -10,21 +10,19 @@
  */
 
 using CatLib;
-using Demo.API.UI;
+using Demo.API.HotfixEntry;
 
-namespace Hotfix.UI
+namespace Hotfix.HotfixEntry
 {
     /// <summary>
-    /// 入口服务
+    /// 热更新入口服务
     /// </summary>
-    public class ProviderUI : ServiceProvider
+    public class ProviderHotfixEntry : ServiceProvider
     {
-        /// <summary>
-        /// 注册入口服务
-        /// </summary>
+        /// <inheritdoc />
         public override void Register()
         {
-            App.Singleton<IUI, UIManager>();
+            App.Singleton<IHotfixEntry, HotfixEntry>();
         }
     }
 }

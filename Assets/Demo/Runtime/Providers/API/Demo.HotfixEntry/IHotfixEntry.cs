@@ -9,16 +9,16 @@
  * Document: https://ilruntime.catlib.io/
  */
 
-namespace Demo.API.UI
+namespace Demo.API.HotfixEntry
 {
     /// <summary>
-    /// UI服务
+    /// 热更新入口
     /// </summary>
-    public interface IUI
+    public interface IHotfixEntry
     {
         /// <summary>
-        /// UI服务
+        /// 进入热更新程序
         /// </summary>
-        void Open(string name);
+        void Entry();
     }
 }

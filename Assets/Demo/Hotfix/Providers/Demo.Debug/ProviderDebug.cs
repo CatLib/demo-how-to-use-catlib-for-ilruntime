@@ -15,13 +15,11 @@ using Demo.API.Debug;
 namespace Hotfix.Debug
 {
     /// <summary>
-    /// 调试服务
+    /// Debug服务提供者
     /// </summary>
     public class ProviderDebug : ServiceProvider
     {
-        /// <summary>
-        /// 注册调试服务
-        /// </summary>
+        /// <inheritdoc />
         public override void Register()
         {
             IBindData bindData;

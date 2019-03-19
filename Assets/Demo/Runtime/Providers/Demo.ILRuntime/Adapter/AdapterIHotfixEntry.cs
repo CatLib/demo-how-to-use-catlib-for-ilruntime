@@ -11,7 +11,7 @@
 
 using System;
 using CatLib;
-using Demo.API.UI;
+using Demo.API.HotfixEntry;
 using ILRuntime.CLR.Method;
 using ILRuntime.Runtime.Enviorment;
 using ILRuntime.Runtime.Intepreter;
@@ -19,11 +19,11 @@ using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 
 namespace Demo.ILRuntime.Adapter
 {
-    public class AdapterIUI : CrossBindingAdaptor
+    public class AdapterIHotfixEntry : CrossBindingAdaptor
     {
         public override Type BaseCLRType
         {
-            get { return typeof(IUI); }
+            get { return typeof(IHotfixEntry); }
         }
 
         public override Type[] BaseCLRTypes
@@ -41,14 +41,14 @@ namespace Demo.ILRuntime.Adapter
             return new Adaptor(appdomain, instance);
         }
 
-        private class Adaptor : IUI, CrossBindingAdaptorType
+        private class Adaptor : IHotfixEntry, CrossBindingAdaptorType
         {
             private readonly ILTypeInstance instance;
             private readonly AppDomain appdomain;
 
-            private IMethod methodOpen;
-            private bool methodGotOpen;
-            private bool isMethodInvokingOpen;
+            private IMethod methodEntry;
+            private bool methodGotEntry;
+            private bool isMethodInvokingEntry;
 
             public Adaptor(AppDomain appdomain, ILTypeInstance instance)
             {
@@ -61,27 +61,27 @@ namespace Demo.ILRuntime.Adapter
                 get { return instance; }
             }
 
-            public void Open(string name)
+            public void Entry()
             {
-                if (!methodGotOpen)
+                if (!methodGotEntry)
                 {
-                    methodOpen = instance.Type.GetMethod("Open", 1);
-                    methodGotOpen = true;
+                    methodEntry = instance.Type.GetMethod("Entry", 0);
+                    methodGotEntry = true;
                 }
 
-                if (methodOpen == null || isMethodInvokingOpen)
+                if (methodEntry == null || isMethodInvokingEntry)
                 {
-                    throw new LogicException("Calling base.Open() in a script is not allowed");
+                    throw new LogicException("Calling base.Entry() in a script is not allowed");
                 }
 
                 try
                 {
-                    isMethodInvokingOpen = true;
-                    appdomain.Invoke(methodOpen, instance, name);
+                    isMethodInvokingEntry = true;
+                    appdomain.Invoke(methodEntry, instance);
                 }
                 finally
                 {
-                    isMethodInvokingOpen = false;
+                    isMethodInvokingEntry = false;
                 }
             }
 

@@ -11,7 +11,7 @@
 
 using CatLib;
 using CatLib.ILRuntime;
-using Demo.API.UI;
+using Demo.API.HotfixEntry;
 using UnityEngine;
 using Application = CatLib.Application;
 
@@ -28,8 +28,7 @@ namespace Demo
         /// </summary>
         protected override void OnStartCompleted()
         {
-            var a = App.Make<IUI>();
-            a.Open("login");
+            App.Make<IHotfixEntry>().Entry();
         }
 
         /// <summary>

@@ -15,13 +15,11 @@ using Hotfix.API.HelloWorld;
 namespace Hotfix.HelloWorld
 {
     /// <summary>
-    /// Hello World服务
+    /// Hello World 服务提供者
     /// </summary>
     public class ProviderHelloWorld : ServiceProvider
     {
-        /// <summary>
-        /// 注册Hello World服务
-        /// </summary>
+        /// <inheritdoc />
         public override void Register()
         {
             App.Singleton<IHelloWorld, ConsoleHelloWorld>();
