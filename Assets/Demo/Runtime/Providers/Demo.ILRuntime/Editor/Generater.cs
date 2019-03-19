@@ -33,7 +33,7 @@ namespace CatLib.ILRuntime
                 typeof(IDebug)
             };
 
-            BindingCodeGenerator.GenerateBindingCode(types, "Assets/Game/Providers/Demo.ILRuntime/Generated/CLR");
+            BindingCodeGenerator.GenerateBindingCode(types, "Assets/Demo/Runtime/Providers/Demo.ILRuntime/Generated/CLR");
         }
     }
 }
