@@ -28,7 +28,7 @@ git clone https://github.com/catlib/demo-how-to-use-catlib-for-ilruntime.git
 git submodule update --init --recursive
 ```
 
-> [CatLib.ILRuntime](https://github.com/CatLib/CatLib.ILRuntime) 扩展将会以子模块的形式安装到`CatLib/Runtime/Vendor`文件夹下,`Game`文件夹中的任何内容都可以被您修改（甚至是Game文件夹名本身）。
+> [CatLib.ILRuntime](https://github.com/CatLib/CatLib.ILRuntime) 扩展将会以子模块的形式安装到`CatLib/Vendor`文件夹下,`Demo`文件夹中的任何内容都可以被您修改。
 
 - 使用`Unity3d`打开这个项目，并设定框架调试等级：
 
