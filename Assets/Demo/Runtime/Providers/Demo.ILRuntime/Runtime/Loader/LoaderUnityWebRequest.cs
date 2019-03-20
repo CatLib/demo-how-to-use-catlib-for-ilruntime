@@ -111,7 +111,7 @@ namespace CatLib.ILRuntime.Loader
         private string GetLoadPath(string file)
         {
 #if UNITY_ANDROID
-            return Application.streamingAssetsPath + "/" + file;
+            return UnityEngine.Application.streamingAssetsPath + "/" + file;
 #else
             return "file:///" + UnityEngine.Application.streamingAssetsPath + "/" + file;
 #endif
