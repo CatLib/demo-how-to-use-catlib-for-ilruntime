@@ -37,7 +37,7 @@ namespace CatLib.ILRuntime
             var ms = MonoScript.FromScriptableObject(CreateInstance(typeof(Generater)));
             var path = Path.GetDirectoryName(AssetDatabase.GetAssetPath(ms));
             path = Path.Combine(path, ".." + Path.DirectorySeparatorChar);
-            BindingCodeGenerator.GenerateBindingCode(types, Path.Combine(path, "Generated/CLR"));
+            BindingCodeGenerator.GenerateBindingCode(types, Path.Combine(path, "Runtime/Generated/CLR"));
         }
     }
 }
