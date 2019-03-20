@@ -1,7 +1,8 @@
 {
     "name": "Hotfix",
     "references": [
-        "Demo.API"
+        "Demo.API",
+        "CatLib.ILRuntime"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
@@ -9,8 +10,10 @@
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "CatLib.Core.dll"
+    ],
+    "autoReferenced": false,
     "defineConstraints": []
 }

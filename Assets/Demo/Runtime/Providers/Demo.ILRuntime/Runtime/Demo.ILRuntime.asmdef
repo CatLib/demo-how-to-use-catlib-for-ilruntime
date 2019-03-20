@@ -1,0 +1,17 @@
+{
+    "name": "Demo.ILRuntime",
+    "references": [
+        "CatLib.ILRuntime",
+        "Demo.API",
+        "Hotfix",
+        "CatLib.Unity"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

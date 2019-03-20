@@ -16,7 +16,7 @@ namespace CatLib.ILRuntime
 {
     public class ReloadScripts
     {
-        private static string DllName = "Hotfix";
+        private static readonly string DllName = "Hotfix";
 
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void OnScriptsReloaded()
